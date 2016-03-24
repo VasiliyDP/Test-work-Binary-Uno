@@ -1,0 +1,642 @@
+@import "bourbon"
+
+html
+	font-size: 10px	
+body
+	font-size: 1.6rem
+	max-width: 1820px
+	min-width: 670px
+	position: relative
+	line-height: 1.6
+	font-family: "Dosis-Book", $helvetica
+	overflow-x: hidden
+	margin: 0 auto
+.hidden
+	display: none
+
+.font_ds_bold
+	font-family: "Dosis-Bold", $helvetica
+.font_ds_book
+	font-family: "Dosis-Book", $helvetica
+.font_ds_extlig
+	font-family: "Dosis-ExtraLight", $helvetica
+.font_ds_med
+	font-family: "Dosis-Medium", $helvetica
+.font_ds_semibold
+	font-family: "Dosis-SemiBold", $helvetica
+.font_eu_caps
+	font-family: "Euro-Caps", $helvetica
+.font_calibr_bold
+	font-family: "Calibri-Bold", $helvetica
+.font_calibr_reg
+	font-family: "Calibri-Regular", $helvetica
+.content
+	width: 1280px
+	margin: 0 auto
+p
+	-webkit-margin-before: 0
+	-webkit-margin-after: 0
+	-webkit-margin-start: 0
+	-webkit-margin-end: 0
+
+// Header
+header
+	height: 56px
+	background-color: #1D1D1D
+	.content
+		img
+			margin-top: 7px
+// Main info
+.main_info
+	background-color: #2F3033
+	min-height: 770px
+	position: relative
+	overflow: hidden
+	&::after
+		content: ''
+		background-image: url("../img/bg_bitcoin.png")
+		position: absolute
+		width: 1007px
+		height: 672px
+		left: 50%
+		margin-left: -213px
+		top: 195px
+		background-repeat: no-repeat
+	.top
+		min-height: 383px
+		background-image: url("../img/bg_main_top.png")
+		background-size: cover
+		padding-top: 15px
+		.content
+			position: relative
+			z-index: 3
+			.text_section
+				display: inline-block
+				max-width: 835px
+				position: relative
+				z-index: 10
+				.up_part
+					max-width: 835px
+					display: inline-block
+					h2
+						color: #2d8ff3
+						font-size: 3.9rem
+						text-shadow: 1px 1px 1px rgba(0,0,0,.75)
+						margin: 0
+						line-height: 1
+						text-transform: uppercase
+						@extend .font_eu_caps
+					h1
+						margin: -7px 0 0 0 
+						line-height: 1
+						color: #2d8ff3
+						font-size: 6.288rem
+						font-weight: 100
+						text-shadow: 1px 1px 1px rgba(0,0,0,.75)
+						text-transform: uppercase
+						@extend .font_eu_caps
+					p.under_title
+						margin: 1px 0 0 1px
+						color: #e0e0e0
+						font-size: 1.8rem
+						@extend .font_ds_semibold
+					p.under_title.second_row
+						margin: -1px 0 0 1px
+				.down_part
+					max-width: 460px
+					display: inline-block
+					h3
+						margin-top: 40px
+						color: #3196ff
+						font-size: 2.4rem
+						line-height: 1.3
+						margin: 36px 0 0 1px
+						font-weight: 100
+						text-transform: uppercase
+					p.under_second_title
+						margin: 13px 0 0 0
+						color: #e0e0e0
+						font-size: 1.8rem
+			.numbers_info
+				display: inline-block
+				vertical-align: top
+				margin-left: 68px
+				position: relative
+				padding-top: 19px
+				width: 76px
+				&::before
+					content: ''
+					position: absolute
+					left: -35px
+					top: 8px
+					width: 39px
+					height: 166px
+					background-image: url("../img/bracket.png")
+				&::after
+					content: ''
+					position: absolute
+					right: -39px
+					top: 8px
+					width: 39px
+					height: 166px
+					background-image: url("../img/bracket.png")
+					transform: rotate(180deg)
+				p
+					line-height: 1
+					opacity: .62
+					@extend .font_eu_caps
+					text-transform: uppercase
+					text-align: center
+				p.date
+					color: #2d8df1
+					font-size: 6.9rem
+					margin: 0 0 0 0
+					span
+						font-size: 6.8rem
+				p.month
+					color: #2d8df1
+					font-size: 1.2rem
+					margin: -3px 0 7px 4px
+				p.numbers
+					color: #abb5bf
+					font-size: 2.4rem
+					padding-top: 2px
+					width: 68px
+					border-top: 4px solid #abb5bf
+					margin: 0 auto
+					margin-left: 6px
+					span
+						font-size: 2.3rem
+				p.bit_text
+					color: #abb5bf
+					font-size: 1.8rem
+					margin: -1px 0 0 7px
+	.bottom
+		min-height: 372px
+		background-image: url("../img/bg_main_bottom.png")
+		background-size: cover
+		.content
+			.price
+				width: 438px
+				height: 156px
+				display: inline-block
+				background-image: url("../img/man_face2.png")
+				background-size: 161px 138px
+				background-position: 282px 12px
+				background-repeat: no-repeat
+				position: relative
+				.price_now
+					margin-top: 40px
+					font-size: 6.258rem
+					color: #c8c8c9
+					@extend .font_eu_caps
+					margin: 21px 0 0 20px
+					display: inline-block
+					position: relative
+					span
+						font-size: 2.5rem
+						position: absolute
+						top: 22px
+						left: -20px
+				.percents
+					color: #f50513
+					font-size: 1.721rem
+					position: relative
+					top: -18px
+					left: 9px
+					&::after
+						content: ''
+						position: absolute
+						width: 8px
+						height: 7px
+						bottom: -9px
+						left: 50%
+						margin-left: -4px
+						background-image: url("../img/sprite/sprite.png")
+						background-position: -25px -18339px
+				.grey_line
+					width: 438px
+					height: 6px
+					background-color: #424345
+					position: absolute
+					left: 4px
+					bottom: 0
+			.under_text
+				width: 440px
+				color: #aeaeb1
+				font-size: 1.8rem
+				margin-top: 15px
+				position: relative
+				span
+					font-size: 7.2rem
+					line-height: 24px
+					&.start
+						top: 9px
+						left: -26px
+						position: absolute
+					&.end
+						line-height: 9px
+						position: relative
+						left: 1px
+						top: 6px
+						vertical-align: bottom
+				p.name
+					color: #9b9b9d
+					@extend .font_ds_semibold
+					font-size: 1.6rem
+					line-height: 24px
+					text-align: right
+					margin-top: 5px
+				a.bloomberg
+					margin-left: 2px
+	.bottom_grey_line
+		height: 4px
+		opacity: .32
+		background-color: #010101
+// Main form
+.start_form
+	position: absolute
+	z-index: 50
+	top: 0
+	left: 50%
+	margin-left: 406px
+	width: 232px
+	height: 619px
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDIzMiA2MTkiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSItMS40MjEwODU0NzE1MjAyZS0xNCUiIHkxPSI1MCUiIHgyPSIxMDAlIiB5Mj0iNTAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIzMjUyNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjMyIiBoZWlnaHQ9IjYxOSIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+)
+	background-image: -moz-linear-gradient(left, #000 0%, #232527 100%)
+	background-image: -o-linear-gradient(left, #000 0%, #232527 100%)
+	background-image: -webkit-linear-gradient(left, #000 0%, #232527 100%)
+	background-image: linear-gradient(left, #000 0%, #232527 100%)
+	-webkit-box-shadow: 0px 0px 60px 1px rgba(0,0,0,0.75)
+	-moz-box-shadow: 0px 0px 60px 1px rgba(0,0,0,0.75)
+	box-shadow: 0px 0px 60px 1px rgba(0,0,0,0.75)
+	p.title
+		color: #e0e0e0
+		@extend .font_ds_semibold
+		font-size: 3.935rem
+		margin: -3px 0 0 4px
+		text-transform: uppercase
+		font-weight: 100
+		text-align: center
+	form
+		margin-top: -5px
+		input
+			display: block
+			width: 205px
+			height: 20px
+			border: 1px solid #a6a3a3
+			background-color: #e1e1e1
+			margin: 0 auto
+			margin-bottom: 4px
+			margin-left: 9px
+			padding: 0 5px
+			padding-top: 6px
+			color: #1b1b1b
+			font-family: "Dosis-ExtraLight", $helvetica
+			font-size: 1.216rem
+			line-height: 1
+			&:focus
+				outline: none
+			&.phone_code
+				width: 43px
+				margin-right: 2px
+				display: inline-block
+			&.phone_number
+				width: 144px
+				display: inline-block
+				margin-left: 0
+
+
+		input
+			&::-webkit-input-placeholder
+				color: #1b1b1b
+				font-family: "Dosis-ExtraLight", $helvetica
+				font-size: 1.216rem
+				line-height: 1
+				text-transform: uppercase
+			&:-moz-placeholder 
+				color: #1b1b1b
+				font-family: "Dosis-ExtraLight", $helvetica
+				font-size: 1.216rem
+				line-height: 1
+				text-transform: uppercase
+			&::-moz-placeholder
+				color: #1b1b1b
+				font-family: "Dosis-ExtraLight", $helvetica
+				font-size: 1.216rem
+				line-height: 1
+				text-transform: uppercase 
+			&:-ms-input-placeholder 
+				color: #1b1b1b
+				font-family: "Dosis-ExtraLight", $helvetica
+				font-size: 1.216rem
+				line-height: 1
+				text-transform: uppercase
+			&.phone_number&::-moz-placeholder,
+			&.phone_number&:-moz-placeholder
+				text-transform: uppercase
+
+
+		
+		input[type='number']
+			-moz-appearance: textfield
+			text-transform: uppercase
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button
+		    /* display: none <- Crashes Chrome on hover */
+		    -webkit-appearance: none
+		    margin: 0 /* <-- Apparently some margin are still there even though it's hidden */
+		body input:focus:required:invalid,
+		body textarea:focus:required:invalid
+			color: #666
+		body input:required:valid,
+		body textarea:required:valid
+			color: #666
+		button[type=submit]
+			width: 217px
+			height: 56px
+			background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDIxNyA1NSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSItMS40MjEwODU0NzE1MjAyZS0xNCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjQwNDA0IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSI5OSUiIHN0b3AtY29sb3I9IiNmYTA0M2UiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmYTA0M2UiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjIxNyIgaGVpZ2h0PSI1NSIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+) /* gradient overlay */
+			background-image: -moz-linear-gradient(bottom, #f40404 0%, #fa043e 99.49%, #fa043e 100%)
+			background-image: -o-linear-gradient(bottom, #f40404 0%, #fa043e 99.49%, #fa043e 100%)
+			background-image: -webkit-linear-gradient(bottom, #f40404 0%, #fa043e 99.49%, #fa043e 100%)
+			background-image: linear-gradient(bottom, #f40404 0%, #fa043e 99.49%, #fa043e 100%)
+			padding: 0
+			border: none
+			color: #fff
+			@extend .font_ds_med
+			font-size: 3.8rem
+			text-transform: uppercase
+			font-weight: 100
+			margin: 11px 0 0 8px
+			position: relative
+			cursor: pointer
+			&::before
+				content: ''
+				position: absolute
+				width: 217px
+				height: 41px
+				background-color: #6f0101
+				top: 21px
+				border-radius: 6px 
+				left: 0
+				z-index: -1
+			&:focus
+				outline: none
+			&:active
+				background-image: -moz-linear-gradient(bottom, #7D0E0E 0%, #fa043e 99.49%, #fa043e 100%)
+				background-image: -o-linear-gradient(bottom, #7D0E0E 0%, #fa043e 99.49%, #fa043e 100%)
+				background-image: -webkit-linear-gradient(bottom, #7D0E0E 0%, #fa043e 99.49%, #fa043e 100%)
+				background-image: linear-gradient(bottom, #7D0E0E 0%, #fa043e 99.49%, #fa043e 100%)
+			&:active::before
+				top: 19px
+	.decr
+		margin-top: 27px
+		p.title_descr
+			color: #2d8ff1
+			@extend .font_ds_med
+			font-size: 2.1rem
+			line-height: 24px
+			margin: 0 0 0 10px
+		ul
+			padding-left: 29px
+			margin-top: 20px
+			li
+				list-style-type: none
+				color: #fff
+				font-size: 1.4rem
+				margin: 0 0 18px 1px
+				line-height: 18px
+				position: relative
+				&::before
+					content: ''
+					position: absolute
+					width: 15px
+					height: 16px
+					left: -21px
+					top: -2px
+					background-image: url("../img/sprite/sprite.png")
+					background-position: -25px -644px
+	.logos
+		margin: 20px 0 0 12px
+		a
+			display: inline-block
+			height: 28px
+			background-image: url("../img/sprite/sprite.png")
+			opacity: .2
+			-webkit-transition: .4s ease-out;
+			-o-transition: .4s ease-out;
+			-moz-transition: .4s ease-out;
+			transition: .4s ease-out;
+
+			&:hover
+				opacity: .5
+			&.icon_1
+				background-position: -25px -828px
+				width: 58px
+			&.icon_2
+				background-position: -25px -902px
+				width: 81px
+				margin-left: 8px
+			&.icon_3
+				background-position: -25px -758px
+				width: 54px
+				margin-left: 4px
+// Button sign in
+.btn_signup
+	width: 217px
+	height: 56px
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDIxNyA1NSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSItMS40MjEwODU0NzE1MjAyZS0xNCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjQwNDA0IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSI5OSUiIHN0b3AtY29sb3I9IiNmYTA0M2UiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmYTA0M2UiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjIxNyIgaGVpZ2h0PSI1NSIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+) /* gradient overlay */
+	background-image: -moz-linear-gradient(bottom, #f40404 0%, #fa043e 99.49%, #fa043e 100%)
+	background-image: -o-linear-gradient(bottom, #f40404 0%, #fa043e 99.49%, #fa043e 100%)
+	background-image: -webkit-linear-gradient(bottom, #f40404 0%, #fa043e 99.49%, #fa043e 100%)
+	background-image: linear-gradient(bottom, #f40404 0%, #fa043e 99.49%, #fa043e 100%)
+	padding: 0
+	border: none
+	color: #fff
+	@extend .font_ds_med
+	font-size: 3.8rem
+	text-transform: uppercase
+	font-weight: 100
+	cursor: pointer
+	position: absolute
+	display: none
+	&:focus
+		outline: none
+	&:active
+		background-image: -moz-linear-gradient(bottom, #7D0E0E 0%, #fa043e 99.49%, #fa043e 100%)
+		background-image: -o-linear-gradient(bottom, #7D0E0E 0%, #fa043e 99.49%, #fa043e 100%)
+		background-image: -webkit-linear-gradient(bottom, #7D0E0E 0%, #fa043e 99.49%, #fa043e 100%)
+		background-image: linear-gradient(bottom, #7D0E0E 0%, #fa043e 99.49%, #fa043e 100%)
+	&:active::before
+		top: 19px
+// Best time to buy
+.time_to_buy
+	position: relative
+	z-index: 5
+	min-height: 234px
+	background-color: #000
+	position: relative
+	overflow: hidden
+	&::after
+		content: ''
+		position: absolute
+		width: 774px
+		height: 591px
+		top: -182px
+		left: 50%
+		margin-left: 150px
+		background-image: url("../img/bitcoin.png")
+	.content
+		.left
+			display: inline-block
+			.chart
+				margin-top: 18px
+				margin-left: -1px
+				width: 413px
+				height: 192px
+				display: inline-block
+				img
+					max-width: 100%
+					max-height: 100%
+		.right
+			display: inline-block
+			max-width: 860px
+			vertical-align: top
+			overflow: visible
+			position: relative
+			.text_title
+				display: inline-block
+				vertical-align: top
+				margin-top: 20px
+				margin-left: 27px
+				background-image: url("../img/bg_buy.png")
+				background-repeat: no-repeat
+				background-size: 100% 100%
+				min-width: 684px
+				min-height: 53px
+				h2
+					padding-left: 13px
+					color: #e0e0e0
+					@extend .font_ds_bold
+					font-size: 2.7rem
+					line-height: 36px
+					text-shadow: 1px 1px 1px rgba(0,0,0,.75)
+					text-transform: uppercase
+					margin: 0 0 0 5px
+			.paragraphs
+				display: inline-block
+				width: 850px
+				color: #e0e0e0
+				font-size: 1.8rem
+				line-height: 40px
+				position: absolute
+				top: 91px
+				left: 30px
+// Info with icon
+.information_icons
+	min-height: 105px
+	background-color: #3a3e3c
+	padding-top: 19px
+	.content
+		text-align: center
+		.info_item
+			width: 178px
+			border-right: 1px solid #636666
+			display: inline-block
+			position: relative
+			padding-top: 40px
+			vertical-align: top
+			height: 47px
+			&:first-child
+				border-left: 1px solid #636666		
+			.icon
+				background-image: url("../img/sprite/sprite.png")
+				width: 80px
+				height: 45px
+				position: absolute
+				left: 50%
+				margin-left: -40px
+				top: -5px
+			h5
+				margin: -2px 0 0 -7px
+				opacity: .51
+				color: #fff
+				font-size: 1.371rem
+				@extend .font_calibr_bold
+				text-align: center
+				text-transform: uppercase
+				font-style: normal	
+			p
+				@extend .font_calibr_reg
+				font-size: 1.1rem
+				line-height: 10px
+				width: 150px
+				margin: -2px 0 0 12px
+				opacity: .51
+				color: #dadada
+				font-style: normal
+			&.item_1
+				width: 183px
+				.icon
+					background-position: -7px -18180px
+			&.item_2
+				.icon
+					background-position: -11px -17653px
+				p
+					width: 145px
+			&.item_3
+				.icon
+					background-position: -9px -17740px
+			&.item_4
+				.icon
+					background-position: -18px -17824px
+				p
+					width: 147px
+			&.item_5
+				.icon
+					background-position: -10px -17914px
+				h5
+					margin-left: -14px
+			&.item_6
+				.icon
+					background-position: -13px -18002px
+			&.item_7
+				.icon
+					background-position: -21px -18088px
+				h5
+					margin-left: -3px
+// Text on blue line 
+.blue_line
+	height: 29px
+	background-color: #2577cb
+	.content
+		text-align: center
+		line-height: 31px
+		color: #fff
+		font-size: 1.2rem
+		padding-left: 27px
+// Partners line
+.partners_line
+	min-height: 57px
+	background-color: #f3f3f3
+	.content
+		text-align: center
+		padding-left: 20px
+
+.all_grey_bg
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, .8)
+	position: fixed
+	z-index: 200
+	top: 0
+	left: 0
+	display: none
+	span
+		font-size: 7rem
+		color: #fff
+		position: absolute
+		top: 40px
+		right: 40px
+		cursor: pointer
+@import "media"

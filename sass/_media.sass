@@ -1,0 +1,168 @@
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1280px)
+	.start_form 
+		top: 202px
+		margin-left: 85px
+	.content
+		width: 1020px
+	.main_info
+		&::after
+			background-size: 750px auto
+			width: 750px
+			height: 500px
+			left: 50%
+			margin-left: 25px
+			top: auto
+			bottom: -130px
+	.time_to_buy
+		.content
+			text-align: center
+			.right
+				.paragraphs
+					display: inline-block
+					width: 850px
+					color: #e0e0e0
+					font-size: 1.8rem
+					line-height: 40px
+					position: relative
+					top: 0
+					left: 0
+	.information_icons
+		.content
+			.info_item
+				width: 178px
+				border-right: none
+				margin-bottom: 20px
+				&:first-child
+					border-left: none		
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1070px)
+	.start_form 
+		position: fixed
+		top: 120px
+		left: 50%
+		margin-left: -116px
+		z-index: 250
+		-webkit-box-shadow: 0 0 60px 1px rgba(146, 132, 132, 0.75)
+    	box-shadow: 0 0 60px 1px rgba(146, 132, 132, 0.75)
+		display: none
+	.main_info
+		.top
+			.content
+				.numbers_info
+					margin-left: 620px
+					position: absolute
+					padding-top: 0
+					top: 115px
+					&::before
+						background-size: 39px 132px
+						height: 132px
+					&::after
+						background-size: 39px 132px
+						height: 132px					
+	.content
+		width: 830px
+	.btn_signup
+		display: block
+		left: 50%
+		margin-left: 132px
+		top: 298px
+		text-align: center
+		z-index: 15
+/* Small Devices, Tablets */
+@media only screen and (max-width : 830px)
+	html
+		font-size: 8px
+	.content
+		width: 670px
+	.main_info
+		&::after
+			background-size: 600px auto
+			width: 600px
+			height: 400px
+			opacity: .5
+		.top
+			.content
+				.numbers_info
+					margin-left: 516px
+					&::before
+						background-size: 39px 105px
+						height: 105px
+					&::after
+						background-size: 39px 105px
+						height: 105px
+	.main_info 
+		.bottom 
+			.content 
+				.under_text 
+    				width: 351px
+				.price	
+					background-position: 203px 12px
+					width: 366px
+					.grey_line
+						width: 361px
+	.btn_signup
+		margin-left: 90px
+		top: 270px
+	.time_to_buy 
+		.content .left
+			padding-left: 90px
+		.content
+			.right
+				.paragraphs
+					width: auto
+				.text_title
+					margin-top: 20px
+					margin-left: 0
+					background-size: 600px 45px
+					min-width: 600px
+					min-height: 45px	
+	.blue_line
+		.content
+			padding-left: 0
+	.partners_line
+		.content
+			padding-left: 0						
+@media only screen and (max-width : 670px)
+	html
+		font-size: 7px
+	body
+		overflow-x: scroll
+		min-width: 375px
+		.content
+			width: 375px
+		.btn_signup
+		    margin-left: -110px
+		    top: 338px
+		.main_info
+			&::after
+				display: none
+			.top
+				.content
+					.numbers_info
+						margin-left: 300px
+						top: 120px
+						p.month
+							font-size: 1.7rem
+						&::before
+							background-image: none
+						&::after
+							background-image: none	
+		.time_to_buy 
+			.content 
+				.left
+					padding-left: 0
+				.right
+					.text_title
+						margin-top: 20px
+						margin-left: 0
+						min-width: 375px
+						min-height: 72px
+						background-size: cover	
+		.partners_line
+			.content
+				width: auto
+				img
+					width: 100%
+					height: auto				
