@@ -1,5 +1,5 @@
 <h1>My test project "Binary-Uno"</h1>
-<b><i>To view this web site, You can click <a href="http://binary-uno.la-qualite.com.ua/">here</a></i></b>
+<b><i>To view this web site, You can click <a href="http://binary-uno.la-qualite.com.ua/" target="_blank">here</a></i></b>
 <br>
 <ol>
 	<li>There is image "bitcoin.jpg" in repository. It was used for make pixel perfect layout.</li>
