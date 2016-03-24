@@ -9,4 +9,4 @@
 	<li>I was made check (on server side) for existing email. Every time when person sign in, his email, through php, write in emails.txt on server. And every time when person write his email in input, through Ajax request, take info from emails.txt, parse in array and check for matches. If emails match, show message about it.</li>
 </ol>
 <br>
-<span>If you want to change the email address of the recipient, you can do it mail.php</span>
+<span>If you want to change the email address of the recipient, you can do it in mail.php</span>
