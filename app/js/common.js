@@ -65,10 +65,8 @@ function validateEmail(input) {
 		cache: false,
 		async: true,
 		success: function (data){
-			console.log(data);   		
 			email_arr = data.split(', ');
 			email_arr.splice(email_arr.indexOf(), 1);
-			console.log(email_arr);
 
 			for(var i=0; i < email_arr.length; i++){
 				if(input.value === email_arr[i]){
